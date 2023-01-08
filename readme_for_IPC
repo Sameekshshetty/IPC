@@ -1,0 +1,30 @@
+###########################################################################################################
+Initial setup(ssh to VB)
+###########################################################################################################
+1.mobaxterm installation in windows
+2.making the network-adapter of VB-ubuntu as bridge-adapter
+3.connecting through ssh from mobaxterm to VB-ubuntu
+
+##########################################################################################################
+Setting the git-github communication 
+##########################################################################################################
+1.create a github account and then give the following commands on the pc to save the account details:
+        $ git config --global user.name "Sameekshshetty"
+        $ git config --global user.email "sameeksh.ee17@bmsce.ac.in"
+        $ git config --global core.editor vim
+2.Take the clone of the github directory onto local machine
+        $ git clone https://github.com/Sameekshshetty/IPC
+3.Steps to be done to make the local changes reflect in github:
+    3.1:Stage the changes
+            $ git add file1.c
+    3.2:Check the status of the file
+            $ git status            or         $ git status -s
+    3.3:Commit the changes
+            $ git commit file1.c
+    3.4:Now we can push the changes to the github
+            $ git push origin main          or           $ git push origin master
+    [Note:- In the place of password public-key has to be given (eg:- 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) 
+     Note:- 'master' branch by default will not be present so we need to create it then do the step 3.4
+     Note:- Before doing "push" command , "pull" should be done so that we are uptodate with github-repo
+    ]
+##########################################################################################################
